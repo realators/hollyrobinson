@@ -195,7 +195,9 @@
     content:''; position:absolute; inset:0;
     background-image:radial-gradient(circle at 30% 20%, rgba(229,99,122,0.25), transparent 55%);
   }
-  .listing-photo svg{width:44px; height:44px; opacity:0.55; position:relative;}
+  .listing-photo svg{width:44px; height:44px; opacity:0.55; position:relative; display:none;}
+  .listing-photo.no-photo svg{display:block;}
+  .listing-photo img{width:100%; height:100%; object-fit:cover; position:relative; z-index:0;}
   .listing-status{
     position:absolute; top:14px; left:14px; z-index:1;
     font-size:0.68rem; font-weight:600; letter-spacing:0.06em; text-transform:uppercase;
@@ -272,7 +274,7 @@
 
 <section class="stats" style="padding-top:0; border-top:none;">
   <div class="wrap stats-grid">
-    <div class="stat reveal"><div class="num">11</div><div class="lbl">Closed sales, prior 2 years</div></div>
+    <div class="stat reveal"><div class="num">11</div><div class="lbl">Closed sales, prior 5 years</div></div>
     <div class="stat reveal"><div class="num">$5.9M</div><div class="lbl">Total value transacted</div></div>
     <div class="stat reveal"><div class="num">$380K&ndash;$850K</div><div class="lbl">Price range</div></div>
     <div class="stat reveal"><div class="num">$532.4K</div><div class="lbl">Average sale price</div></div>
@@ -362,13 +364,13 @@
       <div class="listing-card">
         <div class="listing-photo">
           <span class="listing-status active">For Sale</span>
+          <img src="images/listings/federal-way-1622-sw-350th.jpg" alt="1622 SW 350th St, Federal Way, WA" loading="lazy" onerror="this.closest('.listing-photo').classList.add('no-photo'); this.remove();">
           <svg viewBox="0 0 24 24" fill="none" stroke="#f6f3ec" stroke-width="1.5"><path d="M3 11.5 12 4l9 7.5M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg>
         </div>
         <div class="listing-body">
           <div class="listing-price">$545,000</div>
           <div class="listing-addr">1622 SW 350th St<br>Federal Way, WA 98023</div>
           <div class="listing-meta"><span>3 Beds</span><span>1 Bath</span><span>960 Sq Ft</span></div>
-          <div class="listing-note">Photo coming soon</div>
         </div>
       </div>
     </div>
@@ -378,6 +380,7 @@
       <div class="listing-card">
         <div class="listing-photo">
           <span class="listing-status sold">Sold</span>
+          <img src="images/listings/yelm-22221-clear-lake.jpg" alt="22221 N Clear Lake Blvd SE, Yelm, WA" loading="lazy" onerror="this.closest('.listing-photo').classList.add('no-photo'); this.remove();">
           <svg viewBox="0 0 24 24" fill="none" stroke="#f6f3ec" stroke-width="1.5"><path d="M3 11.5 12 4l9 7.5M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg>
         </div>
         <div class="listing-body">
@@ -390,6 +393,7 @@
       <div class="listing-card">
         <div class="listing-photo">
           <span class="listing-status sold">Sold</span>
+          <img src="images/listings/puyallup-8716-157th-st-ct-e.jpg" alt="8716 157th Street Ct E, Puyallup, WA" loading="lazy" onerror="this.closest('.listing-photo').classList.add('no-photo'); this.remove();">
           <svg viewBox="0 0 24 24" fill="none" stroke="#f6f3ec" stroke-width="1.5"><path d="M3 11.5 12 4l9 7.5M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg>
         </div>
         <div class="listing-body">
@@ -402,6 +406,7 @@
       <div class="listing-card">
         <div class="listing-photo">
           <span class="listing-status sold">Sold</span>
+          <img src="images/listings/university-place-5527-bridgeport-unitb.jpg" alt="5527 Bridgeport Way W Unit B, University Place, WA" loading="lazy" onerror="this.closest('.listing-photo').classList.add('no-photo'); this.remove();">
           <svg viewBox="0 0 24 24" fill="none" stroke="#f6f3ec" stroke-width="1.5"><path d="M3 11.5 12 4l9 7.5M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9"/></svg>
         </div>
         <div class="listing-body">
